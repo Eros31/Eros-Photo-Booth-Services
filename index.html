@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eros Photo Booth Services</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        Eros Photo Booth Services
+        <span>Rustic &amp; Vintage Keepsake Studio</span>
+      </div>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span id="menu-toggle-icon">☰</span>
+        <span>Menu</span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary sections">
+        <button type="button" class="active" data-target="welcome-section">Welcome</button>
+        <button type="button" data-target="services-section">Services</button>
+        <button type="button" data-target="events-section">Events</button>
+        <button type="button" data-target="gallery-section">Gallery</button>
+        <button type="button" data-target="customizer-section">Strip Studio</button>
+        <button type="button" data-target="booking-section">Book via Gmail</button>
+        <button type="button" data-target="about-section">About Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <!-- Welcome Section -->
+    <section id="welcome-section" class="panel is-visible">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="kicker">Welcome</div>
+          <h1>Simple Moments, Lasting Memories</h1>
+          <p class="lead">
+            Welcome to Eros Photo Booth Services. Every smile, laugh, and shared glance deserves a keepsake you can hold long after the celebration ends.
+          </p>
+          <div class="btn-row">
+            <button type="button" class="btn-primary" data-jump="services-section">View Packages</button>
+            <button type="button" class="btn-secondary" data-jump="customizer-section">Design Print Layout</button>
+            <button type="button" class="btn-secondary" data-jump="booking-section">Book via Gmail</button>
+          </div>
+        </div>
+        <div class="hero-banner">
+          <div class="stamp"><span class="stamp-dot"></span>Eros Photo Booth Services</div>
+          <div class="quote">“Hold onto the moments that made you smile today.”</div>
+          <div class="stamp">Memories Worth Keeping</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages & Sample Layouts -->
+    <section id="services-section" class="panel">
+      <div class="kicker">Services</div>
+      <h2>Photo Booth Packages &amp; Sample Layouts</h2>
+      <p class="lead">
+        Unlimited prints for 2 hours on every package. Preview each sample layout, toggle optional Magnet (+1000), and send straight to your Gmail booking inquiry.
+      </p>
+
+      <div class="cards-3" id="packages-grid">
+        <article class="subcard" data-pkg="pkg1">
+          <div>
+            <div class="pkg-code">Package 1</div>
+            <h3>4R Photo with Frame</h3>
+            <div class="price-row">
+              <span class="price">4R Format</span>
+              <span class="addon-tag" id="addon-label-pkg1">Base • Add +1000 w/ Magnet</span>
+            </div>
+
+            <div class="sample-layout-box">
+              <div class="sample-layout-caption">Sample Layout • 4R Frame (1–4 Shots)</div>
+              <div class="sample-4r-card">
+                <div class="sample-4r-grid">
+                  <div class="sample-cell">01</div>
+                  <div class="sample-cell">02</div>
+                  <div class="sample-cell">03</div>
+                  <div class="sample-cell">04</div>
+                </div>
+                <div class="sample-mini-footer">EROS PHOTO BOOTH • 4R</div>
+              </div>
+            </div>
+
+            <ul>
+              <li><strong>Format:</strong> 4R Photo with Frame</li>
+              <li><strong>Shots:</strong> 1–4 Shots</li>
+              <li><strong>Copies:</strong> 1 Copy</li>
+              <li><strong>Duration:</strong> Unlimited for 2 Hours</li>
+              <li><strong>Magnet Option:</strong> Add +1000 if with Magnet</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <label class="magnet-toggle">
+              <span>With Magnet (+1000)</span>
+              <input type="checkbox" class="pkg-magnet-cb" data-pkg="pkg1" />
+            </label>
+            <button type="button" class="btn-secondary" data-select-pkg="pkg1" data-select-title="Package 1 — 4R Photo with Frame">
+              Select Package 1
+            </button>
+          </div>
+        </article>
+
+        <article class="subcard featured-card" data-pkg="pkg2">
+          <div>
+            <div class="pkg-code">Package 2</div>
+            <h3>Polaroid Style with Frame</h3>
+            <div class="price-row">
+              <span class="price">Polaroid Style</span>
+              <span class="addon-tag" id="addon-label-pkg2">Base • Add +1000 w/ Magnet</span>
+            </div>
+
+            <div class="sample-layout-box">
+              <div class="sample-layout-caption">Sample Layout • Polaroid Frame (2 Shots)</div>
+              <div class="sample-polaroid-card">
+                <div class="sample-polaroid-photo">01 • 02 POSE</div>
+                <div class="sample-mini-footer">EROS PHOTO BOOTH • 2 COPIES</div>
+              </div>
+            </div>
+
+            <ul>
+              <li><strong>Format:</strong> Polaroid Style with Frame</li>
+              <li><strong>Shots:</strong> 2 Shots</li>
+              <li><strong>Copies:</strong> 2 Copies</li>
+              <li><strong>Duration:</strong> Unlimited for 2 Hours</li>
+              <li><strong>Magnet Option:</strong> Add +1000 if with Magnet</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <label class="magnet-toggle">
+              <span>With Magnet (+1000)</span>
+              <input type="checkbox" class="pkg-magnet-cb" data-pkg="pkg2" />
+            </label>
+            <button type="button" class="btn-primary" data-select-pkg="pkg2" data-select-title="Package 2 — Polaroid Style with Frame">
+              Select Package 2
+            </button>
+          </div>
+        </article>
+
+        <article class="subcard" data-pkg="pkg3">
+          <div>
+            <div class="pkg-code">Package 3</div>
+            <h3>Photo Strip with Frame</h3>
+            <div class="price-row">
+              <span class="price">Photo Strip</span>
+              <span class="addon-tag" id="addon-label-pkg3">Base • Add +1000 w/ Magnet</span>
+            </div>
+
+            <div class="sample-layout-box">
+              <div class="sample-layout-caption">Sample Layout • 2×6 Strip (3–4 Shots • 2 Copies)</div>
+              <div class="sample-twin-strips">
+                <div class="sample-strip">
+                  <div class="sample-strip-shot">01</div>
+                  <div class="sample-strip-shot">02</div>
+                  <div class="sample-strip-shot">03</div>
+                  <div class="sample-mini-footer">EROS</div>
+                </div>
+                <div class="sample-strip">
+                  <div class="sample-strip-shot">01</div>
+                  <div class="sample-strip-shot">02</div>
+                  <div class="sample-strip-shot">03</div>
+                  <div class="sample-mini-footer">EROS</div>
+                </div>
+              </div>
+            </div>
+
+            <ul>
+              <li><strong>Format:</strong> Photo Strip with Frame</li>
+              <li><strong>Shots:</strong> 3–4 Shots</li>
+              <li><strong>Copies:</strong> 2 Copies</li>
+              <li><strong>Duration:</strong> Unlimited for 2 Hours</li>
+              <li><strong>Magnet Option:</strong> Add +1000 if with Magnet</li>
+            </ul>
+          </div>
+          <div class="card-actions">
+            <label class="magnet-toggle">
+              <span>With Magnet (+1000)</span>
+              <input type="checkbox" class="pkg-magnet-cb" data-pkg="pkg3" />
+            </label>
+            <button type="button" class="btn-secondary" data-select-pkg="pkg3" data-select-title="Package 3 — Photo Strip with Frame">
+              Select Package 3
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div id="selected-package-msg" class="status-note status-note--left"></div>
+    </section>
+
+    <!-- Events -->
+    <section id="events-section" class="panel">
+      <div class="kicker">Events</div>
+      <h2>Recent Celebrations &amp; Setups</h2>
+      <div class="cards-3">
+        <article class="subcard">
+          <div>
+            <strong>Claire &amp; Julian’s Vineyard Wedding</strong>
+            <p class="card-copy">Hacienda Solano • Barnwood &amp; Dried Pampas</p>
+          </div>
+          <span class="event-date">OCT 17, 2026</span>
+        </article>
+        <article class="subcard">
+          <div>
+            <strong>Camille’s 30th Garden Soirée</strong>
+            <p class="card-copy">The Conservatory Courtyard • Ivory Linen &amp; Brass</p>
+          </div>
+          <span class="event-date">SEP 05, 2026</span>
+        </article>
+        <article class="subcard">
+          <div>
+            <strong>Lucas’s 50th Vinyl &amp; Whiskey Night</strong>
+            <p class="card-copy">The Old Mill Loft • Dark Walnut &amp; Edison Bulbs</p>
+          </div>
+          <span class="event-date">AUG 22, 2026</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery-section" class="panel">
+      <div class="kicker">Gallery</div>
+      <h2>Keepsake Photo Gallery</h2>
+      <div class="filter-bar" id="gallery-filters">
+        <button type="button" class="chip active" data-cat="All">All</button>
+        <button type="button" class="chip" data-cat="Weddings">Weddings</button>
+        <button type="button" class="chip" data-cat="Garden Parties">Garden Parties</button>
+        <button type="button" class="chip" data-cat="Birthdays">Birthdays</button>
+      </div>
+      <div class="gallery-grid" id="gallery-grid"></div>
+    </section>
+
+    <!-- Strip Studio Customizer -->
+    <section id="customizer-section" class="panel">
+      <div class="kicker">Interactive Print Studio</div>
+      <h2>Rustic Print Layout Customizer</h2>
+      <p class="lead">
+        Upload sample photos into the slots, customize typography and layout placement, export a high-resolution PNG mockup, or send your design directly to the Gmail booking form.
+      </p>
+
+      <div class="customizer-grid">
+        <div class="strip-stage">
+          <div id="preview-mount"></div>
+          <div id="strip-spec-label" class="status-note"></div>
+
+          <div class="stage-actions">
+            <button type="button" class="btn-primary" id="export-png-btn">Download PNG Mockup</button>
+            <button type="button" class="btn-sage" id="apply-to-booking-btn">Use in Gmail Booking</button>
+          </div>
+          <div id="export-status-msg" class="status-note"></div>
+        </div>
+
+        <div class="controls-stack">
+          <div class="field-group">
+            <label>Preview Photos in Slots (Up to 4 Photos)</label>
+            <div class="upload-dropzone">
+              <div class="upload-controls">
+                <label for="slot-photo-input" class="upload-label-btn">+ Upload Photos</label>
+                <input type="file" id="slot-photo-input" accept="image/*" multiple class="visually-hidden-input" />
+                <button type="button" class="chip" id="clear-photos-btn">Clear Photos</button>
+              </div>
+              <span class="upload-meta" id="upload-count-label">0 of 4 slots filled</span>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label>Photo Layout (10 Formats)</label>
+            <div class="filter-bar filter-bar--compact" id="layout-chips">
+              <button type="button" class="chip active" data-value="4r_1">4R One Photo</button>
+              <button type="button" class="chip" data-value="4r_2">4R Two Photo</button>
+              <button type="button" class="chip" data-value="4r_3">4R Three Photo</button>
+              <button type="button" class="chip" data-value="4r_4">4R Four Photo</button>
+              <button type="button" class="chip" data-value="polaroid">Polaroid</button>
+              <button type="button" class="chip" data-value="strip2_3">2 Photostrip • 3 Photo</button>
+              <button type="button" class="chip" data-value="strip2_4">2 Photostrip • 4 Photo</button>
+              <button type="button" class="chip" data-value="strip2_2">2 Photostrip • 2 Photo</button>
+              <button type="button" class="chip" data-value="strip2_3_ded">2 Photostrip • 3 Photo + Dedication</button>
+              <button type="button" class="chip" data-value="strip2_2_ded">2 Photostrip • 2 Photo + Dedication</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label>Font Style</label>
+            <div class="filter-bar filter-bar--compact" id="font-chips">
+              <button type="button" class="chip active" data-value="serif">Classic Serif</button>
+              <button type="button" class="chip" data-value="script">Vintage Script</button>
+              <button type="button" class="chip" data-value="editorial">Editorial Caps</button>
+              <button type="button" class="chip" data-value="typewriter">Typewriter</button>
+              <button type="button" class="chip" data-value="heirloom-italic">Italic Heirloom</button>
+              <button type="button" class="chip" data-value="condensed">Condensed Modern</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label>Eros Photo Booth Branding (Top / Bottom / Remove)</label>
+            <div class="filter-bar filter-bar--compact" id="brand-pos-chips">
+              <button type="button" class="chip" data-value="top">Top</button>
+              <button type="button" class="chip active" data-value="bottom">Bottom</button>
+              <button type="button" class="chip" data-value="remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <div class="field-header-row">
+              <label for="input-title" class="label-inline">Event Title &amp; Date/Venue</label>
+              <div class="filter-bar filter-bar--compact">
+                <button type="button" class="chip active" id="toggle-title-btn">Shown</button>
+              </div>
+            </div>
+            <div class="filter-bar filter-bar--spaced" id="title-pos-chips">
+              <button type="button" class="chip active" data-value="bottom">Bottom</button>
+              <button type="button" class="chip" data-value="top">Top</button>
+            </div>
+            <div class="input-stack">
+              <input type="text" id="input-title" value="Claire &amp; Julian" maxlength="38" placeholder="Event Title (e.g., Claire &amp; Julian)" />
+              <input type="text" id="input-sub" value="October 17, 2026 • Hacienda Solano" maxlength="48" placeholder="Date &amp; Venue" />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <div class="field-header-row">
+              <label for="input-dedication" class="label-inline">Guest Dedication Note</label>
+              <div class="filter-bar filter-bar--compact">
+                <button type="button" class="chip active" id="toggle-dedication-btn">Shown</button>
+              </div>
+            </div>
+            <div class="filter-bar filter-bar--spaced" id="dedication-pos-chips">
+              <button type="button" class="chip" data-value="top">Top</button>
+              <button type="button" class="chip active" data-value="bottom">Bottom</button>
+            </div>
+            <input type="text" id="input-dedication" value="Thank you for celebrating with us!" maxlength="64" placeholder="Short note or dedication" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Inquiry Form -->
+    <section id="booking-section" class="panel">
+      <div class="kicker">Reservations</div>
+      <h2>Book Eros Photo Booth Services</h2>
+      <div class="gmail-badge">✉ Direct Gmail Inquiry • Pre-fills your booking details in Gmail</div>
+      <p class="lead">
+        Fill out your event details below. Submitting redirects straight to Gmail with your package, magnet add-on, and Strip Studio layout specs pre-filled—ready to send in one click.
+      </p>
+
+      <form id="booking-form">
+        <div class="booking-grid">
+          <div class="field-group">
+            <label for="bk-name">Full Name *</label>
+            <input type="text" id="bk-name" required placeholder="e.g., Claire Mendoza" />
+          </div>
+
+          <div class="field-group">
+            <label for="bk-contact">Your Email or Mobile Number *</label>
+            <input type="text" id="bk-contact" required placeholder="e.g., claire@gmail.com / 0917-000-0000" />
+          </div>
+
+          <div class="field-group">
+            <label for="bk-date">Event Date *</label>
+            <input type="date" id="bk-date" required />
+          </div>
+
+          <div class="field-group">
+            <label for="bk-time">Start Time (2-Hour Unlimited Session)</label>
+            <input type="time" id="bk-time" value="18:00" />
+          </div>
+
+          <div class="field-group">
+            <label for="bk-package">Selected Package</label>
+            <select id="bk-package">
+              <option value="Package 1 — 4R Photo with Frame">Package 1 — 4R Photo with Frame</option>
+              <option value="Package 2 — Polaroid Style with Frame" selected>Package 2 — Polaroid Style with Frame</option>
+              <option value="Package 3 — Photo Strip with Frame">Package 3 — Photo Strip with Frame</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="bk-magnet">Magnet Add-On</label>
+            <select id="bk-magnet">
+              <option value="Base Package (No Magnet)">Base Package (No Magnet)</option>
+              <option value="With Magnet (+1000)">With Magnet (+1000)</option>
+            </select>
+          </div>
+
+          <div class="field-group booking-full">
+            <label for="bk-venue">Event Venue &amp; City *</label>
+            <input type="text" id="bk-venue" required placeholder="e.g., Hacienda Solano, Tagaytay / Metro Manila" />
+          </div>
+
+          <div class="field-group booking-full">
+            <label for="bk-notes">Custom Print Layout &amp; Event Notes</label>
+            <textarea id="bk-notes" rows="4" placeholder="Backdrop theme, custom layout specs, or special requests..."></textarea>
+          </div>
+        </div>
+
+        <div class="btn-row btn-row--spaced">
+          <button type="submit" class="btn-primary">Send Booking via Gmail ↗</button>
+          <a href="#" id="direct-gmail-link" target="_blank" rel="noopener noreferrer" class="btn-sage">Open in Gmail Web</a>
+          <button type="button" class="btn-secondary" id="copy-inquiry-btn">Copy Summary</button>
+        </div>
+      </form>
+
+      <div class="booking-receipt" id="booking-receipt">
+        <strong class="receipt-heading">Redirecting to Gmail Compose...</strong>
+        <p id="booking-receipt-body" class="receipt-body"></p>
+        <div class="btn-row btn-row--compact">
+          <a href="#" id="receipt-gmail-fallback" target="_blank" rel="noopener noreferrer" class="btn-primary btn-sm">
+            Launch Gmail Again ↗
+          </a>
+          <a href="#" id="receipt-mailto-fallback" class="btn-secondary btn-sm">
+            Open Default Mail App
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about-section" class="panel">
+      <div class="kicker">About Us</div>
+      <h2>Crafted for Warm, Tangible Keepsakes</h2>
+      <p class="lead">
+        Eros Photo Booth Services blends vintage studio lighting, warm heirloom print finishes, and custom rustic layouts so guests leave with a tangible piece of your celebration.
+      </p>
+      <div class="cards-3">
+        <article class="subcard">
+          <div>
+            <strong>Studio-Grade Prints</strong>
+            <p class="card-copy">
+              Crisp, smudge-resistant photo paper with optional full-back magnetic backing for lasting fridge-door memories.
+            </p>
+          </div>
+        </article>
+        <article class="subcard">
+          <div>
+            <strong>Bespoke Event Layouts</strong>
+            <p class="card-copy">
+              Every frame is tailored to match your event palette, typography, and personal dedication message.
+            </p>
+          </div>
+        </article>
+        <article class="subcard">
+          <div>
+            <strong>Friendly On-Site Attendants</strong>
+            <p class="card-copy">
+              From setup to curated prop styling, our team keeps the booth flowing smoothly for all 2 hours.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
